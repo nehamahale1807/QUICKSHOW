@@ -54,7 +54,11 @@ const MyBookings = () => {
 
           <div className='flex flex-col md:items-end md:text-right justify-between'>
             <div className='flex items-center gap-4'>
+<<<<<<< HEAD
               <p className='text-2xl font-semibold mb-3'>₹{item.amount}</p>
+=======
+               <p className='text-2xl font-semibold mb-3'>₹{item.amount}</p>
+>>>>>>> 6af390f (first commit)
 
               {!item.isPaid && (
                 <button className='bg-primary px-4 py-1.5 mb-3 text-sm rounded-full font-medium cursor-pointer'>
@@ -76,7 +80,22 @@ const MyBookings = () => {
         </div>
       ))}
     </div>
+<<<<<<< HEAD
   ) : <Loading />
 }
 
 export default MyBookings
+=======
+   ) : <Loading />
+}
+
+export default MyBookings
+
+const dateFormat = (date) => {
+  return new Date(date).toLocaleDateString('en-IN', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric'
+  })
+}
+>>>>>>> 6af390f (first commit)
